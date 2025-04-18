@@ -1,0 +1,85 @@
+:root {
+    --font-size-s: 14px;
+    --dark: #3c4043;
+    --steel: #dadce0;
+    --sky: #4d90fe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: var(--font-size-s);
+}
+
+body {
+    margin: 40px;
+    color: var(--dark);
+    background-color: #fff;
+}
+
+form {
+    max-width: 800px;
+}
+
+label {
+    display: grid;
+    align-items: center;
+    grid-template-columns: 182px 1fr;
+    margin: 30px 0 10px;
+}
+
+.query-input {
+    display: block;
+    width: 100%;
+    height: 26px;
+    padding: 2px 8px;
+    border: 1px solid var(--steel);
+    border-radius: 1px;
+    box-shadow: none;
+    outline: none;
+}
+
+.query-input:focus {
+    box-shadow: inset 0 1px 2px rgba(0, 0, 0, .3);
+    border: 1px solid var(--sky);
+}
+
+
+.search-button {
+    margin-top: 30px;
+}
+
+.submit-input {
+    background-color: var(--sky);
+    border: 1px solid #3079ed;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 2px;
+    cursor: pointer;
+    margin-left: auto;
+}
+
+.submit-input:hover {
+    background-color: #357ae8;
+}
+
+.anchors {
+    position: fixed;
+    top: 16px;
+    right: 16px;
+}
+
+.anchors button {
+    background-color: #f8f9fa;
+    border: 1px solid var(--steel);
+    color: var(--dark);
+    padding: 10px 16px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.anchors button:hover {
+    background-color: #f1f3f4;
+}
